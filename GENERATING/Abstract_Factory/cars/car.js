@@ -3,7 +3,11 @@
 module.exports = class Car {
     constructor(trunkInsides) {
         this.maxTrunkCapacity = 50;
-        this.trunk = [].concat(trunkInsides.slice(0, this.maxTrunkCapacity));
+        if (Array.isArray(trunkInsides)) {
+            this.trunk = [].concat(trunkInsides.slice(0, this.maxTrunkCapacity));
+        } else {
+            this.trunk = [];
+        }
     }
     drive() {
         console.log('drive, max speed = 100km/h');

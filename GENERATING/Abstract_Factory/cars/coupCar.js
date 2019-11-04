@@ -5,7 +5,7 @@ const Car = require('./car');
 module.exports = class CoupCar extends Car {
     constructor(trunkInsides) {
         super(trunkInsides);
-        this.trunkMaxCapacity = 0;
+        this.maxTrunkCapacity = 0;
         this.trunk = [];
     }
     drive() {
