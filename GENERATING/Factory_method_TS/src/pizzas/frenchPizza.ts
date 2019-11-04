@@ -1,7 +1,9 @@
-'use strict';
-const Pizza = require('./pizza');
+import { Pizza } from './pizza';
 
-module.exports = class FrenchPizza extends Pizza {
+export class FrenchPizza extends Pizza {
+    name: string;
+    price: number;
+
     constructor() {
         super();
         this.price = 11;

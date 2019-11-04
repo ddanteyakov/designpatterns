@@ -3,6 +3,7 @@ const PeperoniPizza = require('./pizzas/peperoniPizza');
 const MargaritaPizza = require('./pizzas/margaritaPizza');
 const FrenchPizza = require('./pizzas/frenchPizza');
 const VezuviyPizza = require('./pizzas/vezuviyPizza');
+const Pizza = require('./pizzas/pizza');
 
 module.exports = class PizzaFactory {
     create(pizzaType, ...args) {
@@ -20,7 +21,7 @@ module.exports = class PizzaFactory {
                 return new VezuviyPizza(...args);
             }
             default: {
-                return undefined;
+                return new Pizza(...args);
             }
         }
     }
