@@ -1,8 +1,8 @@
 const PizzaStore = require('./pizzaStore');
 const PizzaFactory = require('./pizzaFactory');
 const pizzaTypes = require('./pizzaTypes');
-
-const pizzaFactory = new PizzaFactory();
+const PeperoniPizza = require('./pizzas/peperoniPizza');
+const pizzaFactory = new PizzaFactory([{ name: pizzaTypes.peperoni, class: PeperoniPizza }]);
 const pizzaStore = new PizzaStore(pizzaFactory);
 
 const myOrder = pizzaStore.order(pizzaTypes.french, 2);
