@@ -1,4 +1,4 @@
-import { ICar } from '../types/ICar';
+import { ICar } from '../types/Cars';
 
 export class Car implements ICar {
     maxTrunkCapacity: number;

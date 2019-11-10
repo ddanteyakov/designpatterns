@@ -1,5 +1,4 @@
-import { carTypes } from "./carTypes";
-import { ICar } from "./ICar";
+import { ICar } from "./Cars";
 
 export interface IAutoFactory {
     createCar(): ICar;
