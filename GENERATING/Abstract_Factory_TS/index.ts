@@ -4,6 +4,5 @@ import { carTypes } from './src/types/carTypes';
 
 const reseller = new Reseller();
 const fordCarStore = new FordCarStore();
-reseller.setCarStore(fordCarStore);
-const myNewCar = reseller.orderCar(carTypes.HATCHBACK);
-console.log(myNewCar);
+const cars = [reseller.orderCar(carTypes.COUP), reseller.orderCar(carTypes.COUP), reseller.orderCar(carTypes.HATCHBACK)];
+cars.forEach(car => car.drive())

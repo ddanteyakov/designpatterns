@@ -1,7 +1,7 @@
-import { ICoupCar, IHatchBackCar, ITrunkCar } from './Cars';
+import { ICoupCar, IHatchBackCar, ITrunkCar, ICar } from './Cars';
 
 export interface ICarStore {
-    buyHatchBackCar(): IHatchBackCar;
-    buyCoupCar(): ICoupCar;
-    buyTrunkCar(): ITrunkCar;
+    buyHatchBackCar(): ICar;
+    buyCoupCar(): ICar;
+    buyTrunkCar(): ICar;
 }

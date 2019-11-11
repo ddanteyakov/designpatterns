@@ -10,6 +10,6 @@ export interface ITrunkCar extends ICar {
 
 }
 
-export interface ICoupCar {
+export interface ICoupCar extends ICar {
     
 }

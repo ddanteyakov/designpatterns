@@ -1,5 +1,6 @@
 import { carTypes } from './types/carTypes';
 import { ICarStore } from './types/CarStore';
+import { ICar } from './types/Cars';
 
 export class Reseller {
     carStore: ICarStore;
@@ -8,7 +9,7 @@ export class Reseller {
         this.carStore = carStore;
     }
 
-    orderCar(type: carTypes) {
+    orderCar(type: carTypes): ICar {
         switch (type) {
             case carTypes.COUP: return this.carStore.buyCoupCar();
             case carTypes.HATCHBACK: return this.carStore.buyHatchBackCar();
