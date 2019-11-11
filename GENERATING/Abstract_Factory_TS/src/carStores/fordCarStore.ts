@@ -1,5 +1,4 @@
 import { CarStore } from './carStore';
 
-export class FordClassStore extends CarStore {
-
+export class FordCarStore extends CarStore {
 }

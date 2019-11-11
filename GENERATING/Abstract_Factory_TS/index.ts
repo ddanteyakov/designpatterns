@@ -1,8 +1,9 @@
-import { FordFactory } from './src/factories/fordFactory';
+import { Reseller } from './src/reseller';
+import { FordCarStore } from './src/carStores/fordCarStore';
 import { carTypes } from './src/types/carTypes';
-import { AutoFactory } from './src/factories/autoFactory';
 
-const fordFactory : AutoFactory = new FordFactory();
-
-const myOwnCar = fordFactory.createCar(carTypes.coup, []);
-console.log(myOwnCar);
+const reseller = new Reseller();
+const fordCarStore = new FordCarStore();
+reseller.setCarStore(fordCarStore);
+const myNewCar = reseller.orderCar(carTypes.HATCHBACK);
+console.log(myNewCar);
