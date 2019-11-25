@@ -1,24 +1,21 @@
-class Prototype {
-    clone() {
-        return Object.assign(this);
-    }
-}
+import { IPrototype } from "./types/Prototype";
+import { IChess } from "./types/Chess";
 
-module.exports = class Chess extends Prototype {
+export class Chess implements IPrototype<IChess>, IChess {
+    field: string[][];
     constructor() {
-        super();
         this.field = [];
         for (let i = 0; i < 10; i++) {
             this.field.push(new Array(10));
         }
     }
 
-    addFigure(vertical, horizontal, figure) {
+    addFigure(vertical: number, horizontal: number, figure: string) {
         if (vertical >= 10 || horizontal >= 10 || vertical < 0 || horizontal < 0) return;
         this.field[vertical][horizontal] = figure;
     }
 
-    takeFigure(vertical, horizontal) {
+    takeFigure(vertical: number, horizontal: number) {
         if (vertical >= 10 || horizontal >= 10 || vertical < 0 || horizontal < 0) return false;
         const figure = this.field[vertical][horizontal];
         this.field[vertical][horizontal] = undefined;

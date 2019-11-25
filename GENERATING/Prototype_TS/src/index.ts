@@ -1,4 +1,4 @@
-const Chess = require('./prototype');
+import { Chess } from './prototype';
 
 const chess = new Chess();
 chess.addFigure(2, 5, 'king');
