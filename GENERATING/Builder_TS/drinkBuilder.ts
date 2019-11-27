@@ -8,52 +8,52 @@ export class DrinkBuilder implements IDrinkBuilder<ICocktail> {
         this.cocktail = '';
     }
     getResult() {
-        return this.cocktail;
+        return this.cocktail.slice(0, -1);
     }
     putCherry() {
-        this.cocktail += 'Cherry';
+        this.cocktail += 'Cherry+';
     }
     putCola() {
-        this.cocktail += 'Cola';
+        this.cocktail += 'Cola+';
     }
     putIce() {
-        this.cocktail += 'Ice';
+        this.cocktail += 'Ice+';
     }
     putMartini() {
-        this.cocktail += 'Martini';
+        this.cocktail += 'Martini+';
     }
     putMineralWater() {
-        this.cocktail += 'MineralWater';
+        this.cocktail += 'MineralWater+';
     }
     putMint() {
-        this.cocktail += 'Mint';
+        this.cocktail += 'Mint+';
     }
     putOrange() {
-        this.cocktail += 'Orange';
+        this.cocktail += 'Orange+';
     }
     putOrangeJus() {
-        this.cocktail += 'OrangeJus';
+        this.cocktail += 'OrangeJus+';
     }
     putPineApple() {
-        this.cocktail += 'PineApple';
+        this.cocktail += 'PineApple+';
     }
     putRom() {
-        this.cocktail += 'Rom';
+        this.cocktail += 'Rom+';
     }
     putSprite() {
-        this.cocktail += 'Sprite';
+        this.cocktail += 'Sprite+';
     }
     putStrawberry() {
-        this.cocktail += 'Strawberry';
+        this.cocktail += 'Strawberry+';
     }
     putTomatoJus() {
-        this.cocktail += 'TomatoJus'
+        this.cocktail += 'TomatoJus+'
     }
     putVodka() {
-        this.cocktail += 'Vodka';
+        this.cocktail += 'Vodka+';
     }
     putWhiskey() {
-        this.cocktail += 'Whiskey';
+        this.cocktail += 'Whiskey+';
     }
     reset() {
         this.cocktail = '';

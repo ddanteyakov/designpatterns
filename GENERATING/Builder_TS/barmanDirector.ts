@@ -2,7 +2,7 @@ import { IDrinkBuilder } from "./types/IDrinkBuilder";
 import { ICocktail } from "./types/ICocktail";
 
 export class BarmenDirector {
-    constructor(public drinkBuilder: IDrinkBuilder<ICocktail>) {
+    constructor(public drinkBuilder?: IDrinkBuilder<ICocktail>) {
     }
 
     makePinakolada() {
