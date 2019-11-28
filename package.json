@@ -1,0 +1,8 @@
+{
+  "name": "deign_patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://DaniilYakovenko@bitbucket.org/DaniilYakovenko/design_patterns.git",
+  "author": "Daniil <Daniil.Yakovenko@artezio.com>",
+  "license": "MIT"
+}
