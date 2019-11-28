@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://DaniilYakovenko@bitbucket.org/DaniilYakovenko/design_patterns.git",
   "author": "Daniil <Daniil.Yakovenko@artezio.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "proto": "node GENERATING/Prototype/src/index.js"
+  }
 }
